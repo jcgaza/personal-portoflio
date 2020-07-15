@@ -1,9 +1,13 @@
 import React from "react";
+import { FaBriefcase } from "react-icons/fa";
 
 const Experience = () => (
-  <section className="section is-primary">
+  <section className="section is-primary" id="work">
     <div className="container">
-      <h1 className="title is-1">Work Experience</h1>
+      <div className="center mb-3">
+        <FaBriefcase size="5rem" fill="white" />
+      </div>
+      <h1 className="title is-1 has-text-centered">Work Experience</h1>
       <div className="columns is-multiline">
         <div className="column is-half">
           <div className="card">
@@ -13,9 +17,7 @@ const Experience = () => (
               </p>
             </div>
             <div className="card-content">
-              <p className="is-italic">
-                UP Rural High School, University of the Philippines Los Baños
-              </p>
+              <p className="is-italic">UP Rural High School, UPLB</p>
               <p className="is-italic">September 2019 - Present</p>
             </div>
           </div>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-
-import "./style.scss";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -31,7 +30,9 @@ const Navbar = () => {
       >
         <div className="container">
           <div className="navbar-brand">
-            <a className="navbar-item">John Cedric Gaza</a>
+            <AnchorLink href="#home" className="navbar-item">
+              John Cedric Gaza
+            </AnchorLink>
             <a
               href="# "
               role="button"
@@ -47,18 +48,15 @@ const Navbar = () => {
           </div>
           <div id="navbarMenuHeroA" className="navbar-menu">
             <div className="navbar-end">
-              <a href="# " className="navbar-item">
+              <AnchorLink offset={64} href="#about" className="navbar-item">
                 About
-              </a>
-              <a href="# " className="navbar-item">
-                Experience
-              </a>
-              <a href="# " className="navbar-item">
+              </AnchorLink>
+              <AnchorLink offset={64} href="#work" className="navbar-item">
+                Work
+              </AnchorLink>
+              <AnchorLink offset={64} href="#projects" className="navbar-item">
                 Projects
-              </a>
-              <a href="# " className="navbar-item">
-                Achievements
-              </a>
+              </AnchorLink>
             </div>
           </div>
         </div>

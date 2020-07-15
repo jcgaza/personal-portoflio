@@ -10,10 +10,11 @@ import {
   FaVuejs,
   FaFigma,
 } from "react-icons/fa";
+import { GrGatsbyjs } from "react-icons/gr";
 import { RiFlutterLine, RiUserSearchLine } from "react-icons/ri";
 
 const About = () => (
-  <section className="section is-medium">
+  <section className="section is-medium" id="about">
     <div className="container">
       <div className="columns is-centered">
         <div className="column">
@@ -22,8 +23,14 @@ const About = () => (
           </h1>
           <p className="subtitle is-5">
             I graduated at the University of the Philippines Los Baños with a
-            Computer Science degree. I like writing stuff—from composing
-            fictional stories to translating solutions into code.
+            Computer Science degree. Currently, I am pursuing a Master's degree
+            in Computer Science in the same university as well as being a Data
+            Scientist for Project SPARTA, an initiative by the Department of
+            Science and Technology (DOST) in the Philippines.
+          </p>
+          <p className="subtitle is-5">
+            I like writing stuff—from composing fictional stories to
+            translating solutions into code.
           </p>
 
           <div className="columns is-multiline mt-6">
@@ -56,9 +63,10 @@ const About = () => (
               </p>
               <div className="proficiency-icons">
                 <FaReact size="3rem" />
-                <RiFlutterLine size="3rem" />
-                <FaVuejs size="3rem" />
+                <GrGatsbyjs size="3rem" />
                 <FaFigma size="3rem" />
+                <FaVuejs size="3rem" />
+                <RiFlutterLine size="3rem" />
               </div>
             </div>
             <div className="column is-one-third pl-5">
@@ -70,14 +78,14 @@ const About = () => (
                 I strive to become an educator focused on implementing
                 technologies inside the classroom. Some of the research areas
                 I'm interested at include:
-                <ul className="has-text-centered mt-3">
-                  <li>Ed-Tech</li>
-                  <li>Data Science</li>
-                  <li>Natural Language Processing</li>
-                  <li>Image Processing</li>
-                  <li>UI/UX Design and Web Development</li>
-                </ul>
               </p>
+              <ul className="has-text-centered mt-3">
+                <li>Ed-Tech</li>
+                <li>Data Science</li>
+                <li>Natural Language Processing</li>
+                <li>Image Processing</li>
+                <li>UI/UX Design and Web Development</li>
+              </ul>
             </div>
           </div>
         </div>

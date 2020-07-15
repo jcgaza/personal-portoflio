@@ -4,7 +4,8 @@ import "../components/style.scss";
 import Helmet from "../components/helmet";
 import Header from "../components/header";
 import About from "../components/about";
-import Experience from "../components/experience";
+import Work from "../components/work";
+import Projects from "../components/projects";
 import Footer from "../components/footer";
 
 const IndexPage = () => (
@@ -12,8 +13,8 @@ const IndexPage = () => (
     <Helmet />
     <Header />
     <About />
-    <Experience />
-    <About />
+    <Work />
+    <Projects />
     <Footer />
   </div>
 );

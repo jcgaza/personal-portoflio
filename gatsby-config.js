@@ -2,10 +2,11 @@ module.exports = {
   siteMetadata: {
     title: "Personal Portfolio",
     author: "John Cedric Gaza",
-    imageUrl: "https://i.imgur.com/Vz81GEl.png",
     description: "Personal portfolio showcasing projects and work experience.",
     keywords: `Web developer, Web, Developer, CSS, HTML, JS, Javascript, Gatsby, Bulma Developer, CSS3, HTML5, SEO, Starter`,
     github: `https://github.com/jcgaza`,
+    linkedin: `https://www.linkedin.com/in/john-cedric-gaza-b09466157/`,
+    email: `jccgaza@gmail.com`,
     siteUrl: `https://www.example.com`,
   },
   plugins: [
@@ -22,13 +23,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Makefolio",
-        short_name: "Makefolio",
+        name: "Portfolio",
+        short_name: "Portfolio",
         start_url: "/",
-        background_color: "#2980b9",
-        theme_color: "#2980b9",
+        background_color: "#ec9f05",
+        theme_color: "#ec9f05",
         display: "standalone",
-        icon: "src/images/gatsby-icon.png",
+        icon: "src/images/avatar.png",
         orientation: "portrait",
       },
     },

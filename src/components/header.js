@@ -1,11 +1,10 @@
 import React from "react";
 
-import "./style.scss";
-
 import Navbar from "./navbar";
+import Links from "./links";
 
 const Header = ({ siteTitle }) => (
-  <section className="hero gradient-bg is-fullheight">
+  <section className="hero gradient-bg is-fullheight" id="home">
     <Navbar />
     <div className="hero-body">
       <div className="container center">
@@ -19,6 +18,7 @@ const Header = ({ siteTitle }) => (
               <p className="subtitle is-4 has-text-white">
                 I'm a teacher, a software developer, and a researcher.
               </p>
+              <Links />
             </div>
           </div>
         </article>
