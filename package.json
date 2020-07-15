@@ -1,13 +1,12 @@
 {
-  "name": "gatsby-bulma-quickstart",
+  "name": "personal-portfolio",
   "description": "A Project to bootstrap your next Gatsby + Bulma site.",
   "version": "1.10.3",
-  "author": "Aman Mittal <amandeepmittal@live.com>",
+  "author": "jcgaza",
   "dependencies": {
     "bulma": "^0.9.0",
     "gatsby": "^2.24.2",
     "gatsby-image": "^2.4.13",
-    "gatsby-plugin-google-analytics": "^2.3.11",
     "gatsby-plugin-manifest": "^2.4.18",
     "gatsby-plugin-offline": "^3.2.17",
     "gatsby-plugin-react-helmet": "^3.3.10",
@@ -39,9 +38,5 @@
   },
   "devDependencies": {
     "prettier": "^1.14.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/amandeepmittal/gatsby-bulma-quickstart"
   }
 }

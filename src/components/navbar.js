@@ -1,41 +1,74 @@
-import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import React, { useState, useEffect } from "react";
+import { FaGithub } from "react-icons/fa";
 
-import './style.scss';
-import gatsbyLogo from '../images/gatsby-icon.png';
-import bulmaLogo from '../images/bulma-logo.png';
+import "./style.scss";
 
-const Navbar = () => (
-	<div className="hero-head is-hidden-mobile">
-		<nav className="navbar">
-			<div className="container">
-				<div className="navbar-brand">
-					<a
-						className="navbar-item"
-						href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-					>
-						<img src={gatsbyLogo} alt="Logo-1" />
-						<img src={bulmaLogo} alt="Logo-2" />
-					</a>
-				</div>
-				<div id="navbarMenuHeroA" className="navbar-menu">
-					<div className="navbar-end">
-						<span className="navbar-item">
-							<a
-								className="button is-danger is-inverted"
-								href="https://github.com/amandeepmittal/gatsby-bulma-quickstart"
-							>
-								<span className="icon">
-									<FaGithub size="fa-2x" />
-								</span>
-								<span>Download</span>
-							</a>
-						</span>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</div>
-);
+const Navbar = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  const listener = (e) => {
+    setScrollY(-document.body.getBoundingClientRect().top);
+  };
+
+  useEffect(() => {
+    setScrollY(document.body.getBoundingClientRect().top);
+    window.addEventListener("scroll", listener);
+    return () => window.removeEventListener("scroll", listener);
+  }, []);
+
+  const onBurgerClick = (e) => {
+    e.preventDefault();
+    document.querySelector(".navbar-menu").classList.toggle("is-active");
+    document.querySelector(".navbar-burger").classList.toggle("is-active");
+  };
+
+  return (
+    <div className="hero-head">
+      <nav
+        id="navbar"
+        className={`navbar is-fixed-top ${
+          scrollY > 0 ? "navbar-color" : ""
+        }`.trim()}
+      >
+        <div className="container">
+          <div className="navbar-brand">
+            <a className="navbar-item">John Cedric Gaza</a>
+            <a
+              href="# "
+              role="button"
+              className="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              onClick={onBurgerClick}
+            >
+              <span aria-hidden="true" />
+              <span aria-hidden="true" />
+              <span aria-hidden="true" />
+            </a>
+          </div>
+          <div id="navbarMenuHeroA" className="navbar-menu">
+            <div className="navbar-end">
+              <a href="# " className="navbar-item">
+                About
+              </a>
+              <a href="# " className="navbar-item">
+                Experience
+              </a>
+              <a href="# " className="navbar-item">
+                Projects
+              </a>
+              <a href="# " className="navbar-item">
+                Achievements
+              </a>
+              <a href="# " className="navbar-item">
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  );
+};
 
 export default Navbar;
