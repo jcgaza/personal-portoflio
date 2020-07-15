@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { FaGithub } from "react-icons/fa";
 
 import "./style.scss";
 
@@ -59,9 +58,6 @@ const Navbar = () => {
               </a>
               <a href="# " className="navbar-item">
                 Achievements
-              </a>
-              <a href="# " className="navbar-item">
-                Contact
               </a>
             </div>
           </div>

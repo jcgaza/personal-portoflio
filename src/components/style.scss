@@ -4,7 +4,7 @@
 // Importing Bulma from node_modules
 @import "~bulma/bulma.sass";
 
-.gradientBg {
+.gradient-bg {
   display: flex;
   background: linear-gradient(315deg, $primary-color 0%, $secondary-color 74%);
 }
@@ -17,30 +17,54 @@
 
 .footer {
   display: flex;
-  padding: 1.5rem 1.5rem;
+  padding: 4rem;
   line-height: 1.5rem;
-
-  a {
-    border-bottom: 1px solid;
-    color: black;
-  }
-
-  a:hover {
-    color: $secondary-color;
-  }
 }
 
 .navbar {
+  // padding: 1.2rem 0;
+
   &-color {
     background-color: $white !important;
     box-shadow: 0px 8px 8px -6px rgba($grey, 0.5);
   }
 
-  &-item:hover {
-    color: $primary-color !important;
+  &-item {
+    margin: 0 1rem;
   }
+}
+
+.is-primary {
+  background-color: $secondary-color;
 }
 
 .media > .media-content {
   overflow: hidden;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.button-icon {
+  border-radius: 50%;
+  padding: 0;
+  height: 50px;
+  width: 50px;
+  color: $secondary-color;
+  background: $white;
+  border: 3px solid $white;
+
+  &:hover {
+    background: transparent;
+    color: $white;
+    border: 3px solid $white;
+  }
+}
+
+.proficiency-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
 }
